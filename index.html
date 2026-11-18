@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f2efe5">
+  <meta name="description"
+    content="AgroConnect RJ: protótipo de vitrine para produtores rurais e consumidores do Rio de Janeiro.">
+  <title>Início | AgroConnect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="dados.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="vitrine.js"></script>
+</head>
+
+<body data-page="index">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div id="cabecalho-compartilhado"></div>
+  <main id="conteudo">
+    <section class="hero-editorial" aria-labelledby="titulo-principal">
+      <div class="hero-palavras">
+        <span class="sobrancelha"><span class="ponto"></span> PEQUENOS PRODUTORES · RJ</span>
+        <p class="hero-numero" aria-hidden="true">01 / TERRA &amp; GENTE</p>
+        <h1 id="titulo-principal">O alimento<br>tem <span>origem.</span><br>A conexão,<br>também.</h1>
+        <p class="hero-intro">Um lugar para encontrar a colheita e conhecer as pessoas por trás dela. Do campo
+          fluminense para novas possibilidades.</p>
+        <div class="hero-chamadas"><a class="botao botao-solido" href="produtos.html">Conhecer os alimentos <span
+              aria-hidden="true">↗</span></a><a class="link-simples" href="minha-area.html">Sou produtor, quero
+            anunciar</a></div>
+      </div>
+      <figure class="hero-foto">
+        <img id="foto-capa-v6" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1800&amp;q=85"
+          data-fallback="imagens/sitio-boa-colheita.jpg"
+          alt="Campo agrícola dourado ao pôr do sol, fotografia ilustrativa da V.6" width="1800" height="1020"
+          fetchpriority="high">
+        <figcaption><span>CAMPO EM FOCO</span><strong>Quem planta faz a história.</strong><small>Imagem ilustrativa ·
+            não representa propriedade real do RJ</small></figcaption>
+      </figure>
+    </section>
+    <div class="faixa-manifesto" aria-label="Valores do projeto">
+      <div class="limite"><span>Produção próxima</span><span class="separador"></span><span>Histórias com
+          origem</span><span class="separador"></span><span>Conexões possíveis</span></div>
+    </div>
+    <section class="limite bloco home-destaques" aria-labelledby="destaques-titulo">
+      <div class="cabeca-secao">
+        <div><span class="sobrancelha">NA VITRINE / 02</span>
+          <h2 id="destaques-titulo">Colheitas que merecem<br>um novo encontro.</h2>
+        </div><a class="link-simples" href="produtos.html">Ver toda a vitrine ↗</a>
+      </div>
+      <div id="destaques" class="grade-produtos" aria-live="polite"></div>
+      <p class="texto-pequeno">Anúncios fictícios utilizados apenas para demonstrar as funcionalidades.</p>
+    </section>
+    <section class="faixa-dados" aria-labelledby="dados-titulo">
+      <div class="limite">
+        <div class="faixa-dados-cabeca"><span class="sobrancelha">DADOS DO CAMPO / RIO DE JANEIRO</span>
+          <h2 id="dados-titulo">O agro fluminense<br>não cabe numa legenda.</h2>
+          <p>Indicadores da fruticultura fluminense em 2024, segundo relatório da EMATER-RIO. Não são resultados do
+            AgroConnect.</p>
+        </div>
+        <div class="grade-dados">
+          <article><strong>8.681</strong><span>produtores de frutas estimados no RJ</span></article>
+          <article><strong>437 mil</strong><span>toneladas de frutas colhidas em 2024</span></article>
+          <article><strong>R$ 1,19 bi</strong><span>faturamento bruto estimado da fruticultura</span></article>
+        </div><a
+          href="https://www.rj.gov.br/emater/sites/default/files/arquivos_pagina/Relat%C3%B3rio%20de%20Atividades%202024.pdf"
+          target="_blank" rel="noopener noreferrer" class="link-fonte">Fonte: EMATER-RIO — Relatório de Atividades
+          2024</a>
+      </div>
+    </section>
+    <section class="limite bloco passo-bloco" aria-labelledby="passos-titulo">
+      <div class="cabeca-secao">
+        <div><span class="sobrancelha">DO CAMPO À TELA / 03</span>
+          <h2 id="passos-titulo">É simples porque precisa ser.</h2>
+        </div>
+      </div>
+      <div class="passos">
+        <article><span>01</span>
+          <h3>Quem produz se apresenta.</h3>
+          <p>Um perfil, uma história e uma pequena vitrine para divulgar a produção.</p>
+        </article>
+        <article><span>02</span>
+          <h3>O consumidor encontra.</h3>
+          <p>Filtros por produto, categoria e município para descobrir novas opções.</p>
+        </article>
+        <article><span>03</span>
+          <h3>O interesse vira contato.</h3>
+          <p>Uma solicitação demonstrativa que aproxima as duas pontas, sem pagamento real.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="quem-somos" class="limite bloco sobre-resumo" aria-labelledby="sobre-titulo">
+      <div class="sobre-historia">
+        <span class="sobrancelha">O AGROCONECT / NOSSO PROPÓSITO</span>
+        <h2 id="sobre-titulo">Uma colheita não deveria terminar invisível.</h2>
+        <p class="sobre-destaque">Antes de um alimento chegar à mesa, existe uma história que a etiqueta de preço não
+          conta: a terra preparada, o tempo respeitado e o trabalho de quem faz a colheita acontecer. O
+          <strong>AgroConnect</strong> nasce para dar espaço a essas histórias.
+        </p>
+        <p>Queremos que a distância entre o campo e a cidade seja menor, não apenas em quilômetros, mas em conhecimento
+          e oportunidades. Porque valorizar a origem é reconhecer as pessoas por trás de cada alimento.</p>
+        <p class="sobre-transparencia">O AgroConnect ainda é um <strong>protótipo acadêmico</strong>. Perfis, anúncios e
+          solicitações apresentados como exemplo são fictícios; não há pagamentos ou entregas reais.</p>
+      </div>
+      <aside class="sobre-manifesto" aria-label="Manifesto do AgroConnect">
+        <span class="sobrancelha">UMA IDEIA PARA APROXIMAR</span>
+        <p>Quem cultiva merece ser <em>encontrado.</em></p>
+        <span class="sobre-manifesto-linha" aria-hidden="true"></span>
+        <strong>Toda origem tem valor.<br>Toda conexão pode abrir caminhos.</strong>
+        <a class="link-simples" href="produtores.html">Conhecer produtores e suas histórias ↗</a>
+      </aside>
+    </section>
+    <section class="limite link-safra-home">
+      <div><span class="sobrancelha">ESTAÇÕES / RJ</span>
+        <h2>Respeitar o tempo<br>também é cultivar.</h2>
+        <p>Descubra os meses indicados no guia de sazonalidade usado pela Secretaria de Saúde do Rio de Janeiro e pela
+          Firjan.</p><a class="botao botao-outline" href="safras.html">Abrir o calendário ↗</a>
+      </div><img src="imagens/morango.jpg" alt="Morangos vermelhos frescos em cesta, imagem ilustrativa" width="540"
+        height="540" loading="lazy">
+    </section>
+  </main>
+  <div id="rodape-compartilhado"></div>
+</body>
+
+</html>

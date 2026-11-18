@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f2efe5">
+  <meta name="description"
+    content="AgroConnect RJ: protótipo de vitrine para produtores rurais e consumidores do Rio de Janeiro.">
+  <title>Calendário de safras | AgroConnect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="dados.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="safras.js"></script>
+</head>
+
+<body data-page="safras">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div id="cabecalho-compartilhado"></div>
+  <main id="conteudo">
+    <section class="topo-pagina topo-safras limite"><span class="sobrancelha">CALENDÁRIO FLUMINENSE / 03</span>
+      <h1>A safra tem seu tempo.<br>O nosso olhar também.</h1>
+      <p>Uma referência para saber em quais meses frutas, legumes e verduras costumam estar em safra, com base no guia
+        SES-RJ / Firjan.</p>
+      <div class="avisos-safra"><span>37 alimentos</span><span>12 meses</span><span>4 estações</span></div>
+    </section>
+    <section class="limite bloco" aria-label="Consulta de sazonalidade">
+      <div class="controle-safra">
+        <fieldset class="estacoes">
+          <legend>Escolha uma estação</legend>
+          <div class="botoes-estacao"><button type="button" data-estacao="verao">Verão</button><button type="button"
+              data-estacao="outono">Outono</button><button type="button" data-estacao="inverno">Inverno</button><button
+              type="button" data-estacao="primavera">Primavera</button></div>
+        </fieldset>
+        <div class="campos-safra">
+          <div class="campo"><label for="mes-safra">Mês</label><select id="mes-safra">
+              <option value="">Todos da estação</option>
+            </select></div>
+          <div class="campo"><label for="tipo-safra">Tipo</label><select id="tipo-safra">
+              <option value="">Todos os alimentos</option>
+              <option>Frutas</option>
+              <option>Legumes</option>
+              <option>Verduras</option>
+            </select></div>
+          <div class="campo"><label for="busca-safra">Buscar alimento</label><input id="busca-safra" type="search"
+              placeholder="Ex.: morango"></div>
+        </div>
+      </div>
+      <div class="resultado-cabeca">
+        <h2 id="titulo-estacao">Safras desta estação</h2><output id="quantidade-safra" aria-live="polite"></output>
+      </div>
+      <div id="lista-safras" class="grade-safras" aria-live="polite"></div>
+    </section>
+    <section class="limite nota-metodo">
+      <h2>De onde vêm os meses?</h2>
+      <p>Da tabela de frutas, legumes e verduras no e-book <em>Aproveitamento Integral dos Alimentos</em>, publicado
+        pela Secretaria de Estado de Saúde do RJ em parceria com a Firjan SESI (páginas 16–17). É uma referência para o
+        consumo, não uma garantia de que o alimento foi cultivado no RJ nem uma previsão atual de estoque ou preço.</p>
+      <a href="https://www.rj.gov.br/saude/sites/default/files/arquivo_pagina_basica/E-Book-Nutre-RJ-compactado.pdf"
+        target="_blank" rel="noopener noreferrer">Consultar a publicação original ↗</a>
+    </section>
+  </main>
+  <div id="rodape-compartilhado"></div>
+</body>
+
+</html>
