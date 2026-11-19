@@ -10,7 +10,7 @@ Protótipo acadêmico da FIAP / Global Solution CitizenTech 2026. Os perfis, an�
 
 ## Páginas
 
-- `index.html` — abertura aprovada da V.6, destaques, estatísticas e **Quem somos** (agora seção desta página).
+- `index.html` — Lobby inicial do site, estatísticas e **Quem somos**.
 - `produtos.html` — vitrine e detalhes de um produto ao abrir `produtos.html?id=p1`.
 - `produtores.html` — lista de produtores e perfil individual em `produtores.html?id=s1`.
 - `safras.html` — calendário de sazonalidade para consumidores do RJ.
